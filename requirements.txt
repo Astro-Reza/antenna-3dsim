@@ -1,0 +1,9 @@
+numpy
+pyvista
+pyvistaqt
+scipy
+PyQt5
+pyqtgraph
+pygame
+matplotlib
+taichi

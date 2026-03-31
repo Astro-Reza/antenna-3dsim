@@ -1,16 +1,41 @@
 
 # Antenna Pointing Simulations
 
-This folder contains three simulation programs for antenna pointing and scan pattern analysis:
+<div align="center">
+  <img width="500px" src="src/banner.png"/>
+</div>
+
+----
+
+<p align="center">
+  <a href="https://github.com/Astro-Reza/antenna-3dsim/blob/main/pointing-control-simulation.py">
+    <img src="https://img.shields.io/badge/Pointing Control Sim-2.7.8-blue" alt="Control Sim" />
+  </a>
+  <a href="https://github.com/Astro-Reza/antenna-3dsim/blob/main/pointing_manual_simulation.py">
+    <img src="https://img.shields.io/badge/Manual Control Sim-1.3.2-green" alt="Manual Control Simulation" />
+  </a>
+  <a href="https://github.com/Astro-Reza/antenna-3dsim/blob/main/pointing_pattern_simulation.py">
+    <img src="https://img.shields.io/badge/Pointing-Patterns Simulator-orangecyan" alt="Pointing Pattern Simulator" />
+  </a>
+</p>
+
+---
+
+![Screenshot.](src/pointing-control-simulation.png)
+
+This folder contains four simulation programs for antenna pointing and scan pattern analysis:
 
 - pointing_manual_simulation.py
 - pointing_pattern_simulation.py
 - pointing_resolution_simulations.py
+- 
 
 ## What Each Script Does
 
-### 1) Manual 3D Joint Control
+### 1. Manual 3D Joint Control
 File: pointing_manual_simulation.py
+
+![Screenshot.](src/pointing-manual-simulation.png)
 
 Purpose:
 - Interactive 3D visualization of antenna mechanical links (azimuth, elevation, polarization).
@@ -33,8 +58,10 @@ Best for:
 
 ---
 
-### 2) Integrated 3D + Pattern Playback
+### 2. Integrated 3D + Pattern Playback
 File: pointing_pattern_simulation.py
+
+![Screenshot.](src/pointing-pattern-simulation.png)
 
 Purpose:
 - Combines a 3D antenna view and a 2D scan-pattern panel in one Pygame window.
@@ -62,8 +89,10 @@ Best for:
 
 ---
 
-### 3) High-Speed Resolution/Coverage Visualizer
+### 3. High-Speed Resolution/Coverage Visualizer
 File: pointing_resolution_simulations.py
+
+![Screenshot.](src/pointing-resolution-simulation.png)
 
 Purpose:
 - Fast 2D scan coverage and Voronoi-cell analysis using Taichi kernels on GPU.
@@ -162,4 +191,3 @@ python pointing_resolution_simulations.py
 - Smaller Voronoi cells generally indicate denser sampling (higher revisit).
 - Larger cells indicate sparser coverage.
 - Pattern tuning trades off uniformity, revisit behavior, and motion style.
->>>>>>> 0326e3e (Initial Commit)
